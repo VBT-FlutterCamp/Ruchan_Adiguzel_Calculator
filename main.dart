@@ -7,6 +7,7 @@ void main(List<String> args) {
   int counter = 0;
   String operator = "";
   while (true) {
+    //while condition is True because user should do calculation until program closed
     //Getting first number
     firstNumber = getFirstNumber(errorMessage);
     //Getting operator to procces type
@@ -17,6 +18,7 @@ void main(List<String> args) {
     CalculateTheResult(firstNumber, secondNumber, operator);
     print("*********");
     counter++;
+
     if (counter == 5) break; //Breaks the loop
 
     // if (firstNumber == "break" && secondNumber == "break")
