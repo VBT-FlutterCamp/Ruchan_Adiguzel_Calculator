@@ -46,10 +46,10 @@ void CalculateTheResult(
 }
 
 double getFirstNumber(errorMessage) {
-  var firstNumber;
+  double? firstNumber;
   try {
     print("Enter first number: ");
-    firstNumber = double.parse(stdin.readLineSync()!);
+    firstNumber = double.parse(stdin.readLineSync() ?? "");
     return firstNumber;
   } catch (e) {
     print(errorMessage);
